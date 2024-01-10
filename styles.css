@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: #101010;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1516641051054-9df6a1aad654?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  border-radius: 20px;
+  margin: 10px 10px 50px 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 24px;
+  opacity: 0;
+}
+
+.slide h3:hover {
+  color: #ffffff76;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#af5252, #8e1108);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
